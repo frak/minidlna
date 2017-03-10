@@ -1534,7 +1534,7 @@ video_no_dlna:
 		strftime(m.date, 20, "%FT%T", modtime);
 	}
 
-	if( !m.title )
+	if( !m.title || GETFLAG(IGNORE_METADATA_MASK) )
 		m.title = strdup(name);
 
 	album_art = find_album_art(path, m.thumb_data, m.thumb_size);

@@ -731,6 +731,10 @@ init(int argc, char **argv)
 			if (strtobool(ary_options[i].value))
 				SETFLAG(WIDE_LINKS_MASK);
 			break;
+		case IGNORE_METADATA_TITLE:
+			if (strtobool(ary_options[i].value))
+				SETFLAG(IGNORE_METADATA_MASK);
+			break;
 		default:
 			DPRINTF(E_ERROR, L_GENERAL, "Unknown option in file %s\n",
 				optionsfile);

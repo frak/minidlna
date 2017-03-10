@@ -36,29 +36,30 @@
 enum upnpconfigoptions {
 	UPNP_INVALID = 0,
 	UPNPIFNAME = 1,			/* ext_ifname */
-	UPNPPORT,			/* port */
-	UPNPPRESENTATIONURL,		/* presentation_url */
-	UPNPNOTIFY_INTERVAL,		/* notify_interval */
-	UPNPUUID,			/* uuid */
-	UPNPSERIAL,			/* serial */
+	UPNPPORT,				/* port */
+	UPNPPRESENTATIONURL,	/* presentation_url */
+	UPNPNOTIFY_INTERVAL,	/* notify_interval */
+	UPNPUUID,				/* uuid */
+	UPNPSERIAL,				/* serial */
 	UPNPMODEL_NAME,			/* model_name */
 	UPNPMODEL_NUMBER,		/* model_number */
 	UPNPFRIENDLYNAME,		/* how the system should show up to DLNA clients */
 	UPNPMEDIADIR,			/* directory to search for UPnP-A/V content */
 	UPNPALBUMART_NAMES,		/* list of '/'-delimited file names to check for album art */
 	UPNPINOTIFY,			/* enable inotify on the media directories */
-	UPNPDBDIR,			/* base directory to store the database and album art cache */
-	UPNPLOGDIR,			/* base directory to store the log file */
+	UPNPDBDIR,				/* base directory to store the database and album art cache */
+	UPNPLOGDIR,				/* base directory to store the log file */
 	UPNPLOGLEVEL,			/* logging verbosity */
-	UPNPMINISSDPDSOCKET,		/* minissdpdsocket */
+	UPNPMINISSDPDSOCKET,	/* minissdpdsocket */
 	ENABLE_TIVO,			/* enable support for streaming images and music to TiVo */
 	ENABLE_DLNA_STRICT,		/* strictly adhere to DLNA specs */
 	ROOT_CONTAINER,			/* root ObjectID (instead of "0") */
 	USER_ACCOUNT,			/* user account to run as */
-	FORCE_SORT_CRITERIA,		/* force sorting by a given sort criteria */
+	FORCE_SORT_CRITERIA,	/* force sorting by a given sort criteria */
 	MAX_CONNECTIONS,		/* maximum number of simultaneous connections */
 	MERGE_MEDIA_DIRS,		/* don't add an extra directory level when there are multiple media dirs */
-	WIDE_LINKS			/* allow following symlinks outside the defined media_dirs */
+	WIDE_LINKS,				/* allow following symlinks outside the defined media_dirs */
+	IGNORE_METADATA_TITLE	/* use the title from the file name rather than from the metadata */
 };
 
 /* readoptionsfile()
